@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  padding: 40px 20px;
+  background-color: #2f8edc;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+/* IMAGE RONDE */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 20px;
+}
+
+/* SECTIONS */
+section {
+  padding: 30px;
+}
+
+h2 {
+  color: #06b6d4;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background: #0f172a;
+    padding: 15px 0;
+    border-top: 1px solid #334155;
+    border-bottom: 1px solid #334155;
+}
+
+.marquee {
+    display: flex;
+}
+
+.marquee span {
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    animation: scroll 15s linear infinite;
+
+    /* Dégradé pro */
+    background: linear-gradient(90deg, #38bdf8, #6366f1, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Glow effet développeur */
+    text-shadow: 0 0 10px rgba(99,102,241,0.7);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
