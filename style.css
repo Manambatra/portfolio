@@ -1,0 +1,157 @@
+/* ===== BODY ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1E1E1E; /* fond principal foncé */
+  color: #FFFFFF;       /* texte clair */
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===== HEADER ===== */
+.header-flex {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-align: left;
+  padding: 30px;
+  background: #87e1b4;
+  border-radius: 20px;
+  border: 2px solid #d4dcd8; /* accent vert clair */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+
+.header-flex .photo-container {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 20px; /* carré avec coins arrondis */
+  overflow: hidden;
+  border: 4px solid #99FFCC;
+}
+
+.header-flex .photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-flex .header-info h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #99FFCC; /* texte principal accentué */
+}
+
+.header-flex .header-info p {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+/* ===== SECTION CARD ===== */
+.section-card {
+  background: #1E1E1E;
+  margin: 30px auto;
+  padding: 30px;
+  width: 85%;
+  max-width: 800px;
+  border-radius: 20px;
+  border: 2px solid #99FFCC; /* accent vert */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgb
+}
+/* Titres des sections */
+.section-card h2 {
+  color: #99FFCC;  /* même couleur que le nom dans le header */
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* ===== COMPÉTENCES ===== */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #333333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 10px;
+  background: #99FFCC; /* accent vert */
+}
+
+/* Définir largeur compétence */
+.html { width: 20%; }
+.css { width: 10%; }
+
+/* ===== LANGUES ===== */
+.language-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.language-card {
+  background: #1E1E1E;
+  padding: 25px;
+  width: 100px;
+  border-radius: 20px;
+  border: 2px solid #99FFCC;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transition: 0.3s ease;
+}
+
+.language-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+.language-card img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.language-card h3 {
+  margin-bottom: 15px;
+}
+
+.badge {
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.green { background: #99FFCC; color: #1E1E1E; }      /* maternelle */
+.orange { background: #FFA500; color: #1E1E1E; }     /* intermédiaire */
+.gray { background: #6B7280; color: #FFFFFF; }        /* débutant */
+
+/* ===== CONTACT ===== */
+.contact i {
+  margin-right: 10px;
+  color: #99FFCC;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.contact-link:hover {
+  color: #99FFCC;
+}
+
